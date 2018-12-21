@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            width: 200px;
+            height: 200px;
+            position: relative;
+
+        }
+
+        #box:before {
+            position: absolute;
+            top:0;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #000;
+        }
+
+        #box:after {
+            position: absolute;
+            bottom:0;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #000;
+            transform: scaleY(0.5);
+        }
+
+        @media only screen and (-webkit-device-pixel-ratio: 2) {
+            #box:before{
+                transform: scaleY(0.5);
+            }
+        }
+
+        @media only screen and (-webkit-device-pixel-ratio: 3) {
+            #box:before {
+                transform: scaleY(0.5);
+            }
+            #box:after {
+                transform: scaleY(0.5);
+            }
+        }
+
+
+        @media only screen and (-webkit-device-pixel-ratio: 3) {
+            #box:before {
+                transform: scaleY(0.33333);
+            }
+            #box:after {
+                transform: scaleY(0.33333);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div id="box">
+    测试
+</div>
+
+</body>
+</html>

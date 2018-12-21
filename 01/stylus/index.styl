@@ -1,0 +1,13 @@
+$font=24px
+//定义混合函数
+basicStyle()
+    width 200px
+    height 200px
+    background pink
+//  继承 @entend
+.parent
+    color red
+.test
+   font-size $font
+   basicStyle()
+   @extend .parent

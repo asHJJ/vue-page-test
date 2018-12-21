@@ -1,0 +1,574 @@
+@import "reset.css";
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+  .border-1px::before {
+    transform: scaleY(0.5);
+  }
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  .border-1px::before {
+    transform: scaleY(0.333333);
+  }
+}
+body {
+  background: #f5f5f5;
+}
+#app {
+  background: #f5f5f5;
+}
+#app #content {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+}
+#app #content section {
+  width: 100%;
+  display: none;
+}
+#app #content section.on {
+  display: block;
+}
+#app #content section .msite_header {
+  width: 100%;
+  height: 45px;
+  background: #02a774;
+  z-index: 20;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+#app #content section .msite_header .header_search {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10%;
+  height: 50%;
+  color: #fff;
+}
+#app #content section .msite_header .header_search i {
+  font-size: 25px;
+  margin: 5px 7px;
+}
+#app #content section .msite_header .header_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  margin-left: -5px;
+}
+#app #content section .msite_header .header_title span:first-child {
+  font-size: 20px;
+  display: block;
+}
+#app #content section .msite_header .login {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  transform: translateY(-50%);
+  right: 15px;
+}
+#app #content section .msite_header .login span {
+  display: block;
+}
+#app #content section .swiper-container {
+  background: #fff;
+  margin-top: 45px;
+  width: 100%;
+}
+#app #content section .swiper-container .swiper-wrapper {
+  height: 200px;
+}
+#app #content section .swiper-container img {
+  width: 100%;
+  height: 200px;
+}
+#app #content section .swiper-container .swiper-pagination-bullet-active {
+  background: #02a774;
+}
+#app #content section .swiper-container .swiper-slide {
+  height: 100%;
+  *zoom: 1;
+}
+#app #content section .swiper-container .swiper-slide::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#app #content section .swiper-container li {
+  float: left;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#app #content section .swiper-container li img {
+  width: 50%;
+  height: 50%;
+  margin: 10px 0;
+}
+#app #content section .swiper-container li span {
+  font-size: 14px;
+}
+#app #content section .near_shop {
+  background: #fff;
+  width: 100%;
+  height: 500px;
+  margin-top: 10px;
+  position: relative;
+}
+#app #content section .near_shop .shop_header {
+  width: 100%;
+  position: absolute;
+  top: 8px;
+  left: 4px;
+}
+#app #content section .near_shop .shop_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  height: 420px;
+}
+#app #content section .near_shop .shop_content .shop_row {
+  position: relative;
+  width: 100%;
+  height: 105px;
+}
+#app #content section .near_shop .shop_content .shop_row::before {
+  content: '';
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #eee;
+  transform: scaleY(0.5);
+}
+#app #content section .near_shop .shop_content .shop_row a {
+  box-sizing: border-box;
+  padding: 15px 8px;
+  width: 100%;
+  height: 100%;
+  *zoom: 1;
+  display: block;
+}
+#app #content section .near_shop .shop_content .shop_row a::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_left {
+  box-sizing: border-box;
+  float: left;
+  width: 23%;
+  height: 75px;
+  padding-right: 10px;
+  position: relative;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_left img {
+  width: 100%;
+  height: 100%;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right {
+  width: 77%;
+  float: right;
+  height: 75px;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .right_one {
+  width: 100%;
+  *zoom: 1;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .right_one::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .right_one h4 {
+  color: #333;
+  float: left;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .right_one h4:before {
+  content: '品牌';
+  display: inline-block;
+  font-size: 11px;
+  background-color: #ffd930;
+  margin-right: 5px;
+  padding: 2px;
+  border-radius: 2px;
+  line-height: 11px;
+  color: #000;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .right_one span {
+  float: right;
+  margin-top: 3px;
+  font-size: 11px;
+  color: #999;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .right_two {
+  width: 100%;
+  *zoom: 1;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  height: 15px;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .right_two::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .stars {
+  float: left;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .stars .star {
+  float: left;
+  width: 12px;
+  height: 12px;
+  background-size: 12px 12px;
+  display: inline-block;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .stars .star.on {
+  background-image: url("../imgs/stars/star_on@2x.png");
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  #app #content section .near_shop .shop_content .shop_row a .shop_right .stars .star.on {
+    background-image: url("../imgs/stars/star_on@3x.png");
+  }
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .stars .star.half {
+  background-image: url("../imgs/stars/star_half@2x.png");
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  #app #content section .near_shop .shop_content .shop_row a .shop_right .stars .star.half {
+    background-image: url("../imgs/stars/star_half@3x.png");
+  }
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .stars .star.off {
+  background-image: url("../imgs/stars/star_off@2x.png");
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  #app #content section .near_shop .shop_content .shop_row a .shop_right .stars .star.off {
+    background-image: url("../imgs/stars/star_off@3x.png");
+  }
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .stars #rating {
+  color: #ff6000;
+  float: left;
+  font-size: 10px;
+  margin-left: 4px;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .stars .month {
+  float: left;
+  font-size: 10px;
+  margin-left: 6px;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .method {
+  float: right;
+  color: #fff;
+  margin-right: -10px;
+  height: 13px;
+  font-size: 4px;
+  position: relative;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .method span:first-child {
+  background-color: #02a774;
+  border: 1px solid #02a774;
+  display: inline-block;
+  border-radius: 2px;
+  transform: scale(0.7);
+  margin-right: 2px;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .method span:last-child {
+  margin-right: 8px;
+  display: inline-block;
+  border: 1px solid #02a774;
+  color: #02a774;
+  border-radius: 2px;
+  transform: scale(0.7);
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .right_three {
+  width: 100%;
+  color: #666;
+  *zoom: 1;
+  transform-origin: 0;
+  transform: scale(0.9);
+  font-size: 10px;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .right_three::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .o {
+  float: left;
+  font-size: 100%;
+  font-weight: normal;
+  margin-right: 3px;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .n {
+  color: #ccc;
+  float: left;
+  margin-right: 3px;
+}
+#app #content section .near_shop .shop_content .shop_row a .shop_right .e {
+  float: left;
+}
+#app #content section .search_title {
+  width: 100%;
+  height: 45px;
+  background: #02a774;
+  z-index: 20;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+#app #content section .search_title_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+}
+#app #content section .search_form {
+  margin-top: 45px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff;
+  width: 100%;
+  height: 60px;
+}
+#app #content section .search_form form {
+  margin-top: 45px;
+  background-color: #fff;
+  *zoom: 1;
+}
+#app #content section .search_form form::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#app #content section .search_form form input {
+  float: left;
+  -web-kit-appearance: none;
+  -moz-appearance: none;
+  background: #f5f5f5;
+  width: 74%;
+  height: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: -27px;
+  margin-right: 5px;
+}
+#app #content section .search_form form .tijiao {
+  -web-kit-appearance: none;
+  -moz-appearance: none;
+  float: right;
+  width: 18%;
+  border: 4px solid #02a774;
+  font-size: 16px;
+  color: #fff;
+  background-color: #02a774;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+}
+#app #content section .order {
+  width: 100%;
+  height: 100%;
+}
+#app #content section .order_title {
+  width: 100%;
+  height: 45px;
+  background: #02a774;
+  z-index: 20;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+#app #content section .order_title span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+}
+#app #content section .order_list {
+  padding-top: 140px;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+#app #content section img {
+  display: block;
+  width: 100%;
+  height: 30%;
+}
+#app #content section .order_text {
+  padding: 10px 0;
+  font-size: 17px;
+  color: #6a6a6a;
+  text-align: center;
+}
+#app #content section .order_login {
+  width: 46%;
+  border: 1px solid #02a774;
+  font-size: 14px;
+  color: #fff;
+  background-color: #02a774;
+  border-radius: 2px;
+  padding: 10px 20px;
+}
+#app #content .my_title {
+  width: 100%;
+  height: 45px;
+  background: #02a774;
+  z-index: 500;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+#app #content .my_title span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+}
+#app #content .person {
+  border-top: 1px solid #fff;
+  margin-top: 45.5px;
+  width: 100%;
+  height: 100px;
+  background: #02a774;
+  position: relative;
+}
+#app #content .person .person_a {
+  width: 100%;
+  height: 60px;
+  display: block;
+  background: #02a774;
+  margin: 0 auto;
+  transform: translateY(35%);
+  *zoom: 1;
+}
+#app #content .person .person_a::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#app #content .person .person_a .person_image {
+  float: left;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 8px;
+}
+#app #content .person .person_a .person_image .iconfont {
+  background: #e4e4e4;
+  font-size: 62px;
+}
+#app #content .person .person_a .user_info {
+  float: left;
+  margin-top: 8px;
+  margin-left: 12px;
+  color: #fff;
+}
+#app #content .person .person_a .user_info .user_login {
+  padding-bottom: 8px;
+}
+#app #content .person .person_a .user_info .shouji {
+  display: inline-block;
+  margin-left: -16px;
+  height: 20px;
+  *zoom: 1;
+}
+#app #content .person .person_a .user_info .shouji::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#app #content .person .person_a .user_info .shouji .iconfont {
+  font-size: 30px;
+  float: left;
+}
+#app #content .person .person_a .user_info .shouji .band_phone {
+  float: left;
+  font-size: 14px;
+  margin-top: 7px;
+  margin-left: -9px;
+}
+#app #content .person .person_a .user_info .jiantou1 {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 15px;
+  top: 40%;
+}
+#app #content .person .person_a .user_info .jiantou1 .iconfont {
+  color: #fff;
+  font-size: 5px;
+}
+footer {
+  position: relative;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+footer::before {
+  content: '';
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #eee;
+}
+.guide-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.guide-item span:first-child .iconfont {
+  font-size: 22px;
+  display: inline-block;
+  margin: 5px 0;
+}
+.guide-item span:last-child {
+  font-size: 14px;
+}
+.guide-item.active {
+  color: #02a774;
+}

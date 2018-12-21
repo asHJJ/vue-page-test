@@ -1,0 +1,10 @@
+.parent,
+.test {
+  color: #f00;
+}
+.test {
+  font-size: 24px;
+  width: 200px;
+  height: 200px;
+  background: #ffc0cb;
+}
